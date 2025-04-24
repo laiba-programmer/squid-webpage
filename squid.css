@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    color: #000;
+  }
+  .top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+  }
+  .branding h1{
+    font-size: 24px;
+  color: #880e4f;
+  position: relative;
+  top: 45px;
+  display: flex;
+  left: 85px;
+  }
+  .branding p {
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    top: 45px;
+    display: flex;
+    left: 85px;
+   
+  }
+
+  .top-icons img {
+   height: 30px;
+
+    color: #333;
+    cursor: pointer;
+
+    position: relative;
+    top: 45px;
+   
+    right:95px;
+  }
+
+
+  .laptop{
+    background-color: #000;
+    border-radius: 30px;
+    margin: 30px auto;
+    /* Purpose: This adds a margin of 30 pixels to the top and bottom of the element, while auto for the left and right margins centers the element horizontally within its parent container. */
+    max-width: 1100px;
+    padding: 50px;
+    color: white;
+    height: 500px;
+  }
+  .main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .main-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav li{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .main-nav li:hover {
+    color: #fff;
+    border-bottom: 1px solid wheat;
+  }
+  .logo {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: cursive;
+  }
+  
+  .signup{
+    border:2px solid #ec407a;
+    padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bolder;
+  color: white
+  
+  }
+  .signup:hover{
+    background-color: #ec407a;
+  }
+
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .hero-text {
+    max-width: 50%;
+  }
+  .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .hero-text h2 span {
+    color: #ec407a;
+  }
+  .hero-text p {
+    font-size: 16px;
+    color: #bbb;
+    margin-top: 40px;
+    line-height: 1.5;
+  
+  }  
+
+
+  .game-btn {
+    background-color: #f50057;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .game-btn:hover{
+    background-color: #f5005693;
+  }
+
+ .squid-img img{
+width:400px;
+height: 300px;
+flex-wrap: wrap;
+ }
+
+ .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+ 
+  }
+  
+  .card {
+    background:linear-gradient(to right, #1a1a1a, #000000);
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    height:300px ;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h3 {
+    color: #ec407a;
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-top: 55px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  .card-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ec407a;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    background-color: #d81b60;
+  }
+  
+ 
+
+  .mini-footer {
+    background: linear-gradient(to right, #1a1a1a,black, hotpink);
+    color: #ccc;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  .inner-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-icons img {
+
+    margin: 0 8px;
+    font-size: 16px;
+    background-color: hotpink;
+    border-radius: 20px;
+    transition:  0.3s ease;
+
+  }
+  
+  .footer-icons img:hover {
+    color: #fff;
+    transform: translateY(-10px);
+  }
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .branding h1,
+    .branding p {
+
+      display: block;
+      left: 0;
+      top: 0;
+      text-align: left;
+    }
+  
+    .top-icons {
+        display: flex;
+        overflow: hidden;
+        gap: 15px;
+        margin-top: 15px;
+        
+     
+      }
+  
+    .top-icons img {
+      height: 25px;
+      left: 300px;
+      top: -50px;
+      
+    }
+  
+    .laptop {
+      padding: 20px;
+      height: auto;
+    }
+  
+    .main-nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .main-nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .main-nav li {
+      font-size: 14px;
+    }
+  
+    .logo {
+      font-size: 24px;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .hero {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .game-btn {
+      margin: 20px auto;
+    }
+  
+    .squid-img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .squid-img img {
+      width: 250px;
+      height: auto;
+    }
+    
+   
+  }
+  
